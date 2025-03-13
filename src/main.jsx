@@ -47,7 +47,8 @@ const router = createBrowserRouter(
       <Route path='github' element={<Github />}/>
       <Route path='user/:userid' element={<User />}/>
     </Route>
-  )
+  ),
+  { basename: "/webpage-route" }
 )
 
 createRoot(document.getElementById('root')).render(
